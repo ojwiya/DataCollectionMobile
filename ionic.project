@@ -1,0 +1,12 @@
+{
+  "name": "DataCollector",
+  "app_id": "edde3374",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}

@@ -1,0 +1,34 @@
+<ion-view view-title="Restaurant">
+  <ion-content>
+    <div class="list card">
+
+  <div class="item item-avatar">
+    <img src="http://loremflickr.com/230/230/food,{{restaurant.cuisineTypes}}">
+    <h2>{{restaurant.name}}</h2>
+    <h4>{{restaurant.address}}</h4>
+    <h4>{{restaurant.postcode}}</h4>
+    <h4>{{restaurant.city}}  </h4>
+     <span ng-if="restaurant.isOpenNow" class="badge badge-balanced">open</span>
+     <span ng-if="!restaurant.isOpenNow" class="badge badge-dark">closed</span>  
+  </div>
+
+  <div class="item item-body">
+    
+     <div class="row">
+        <div class="col">
+                 <p ng-repeat="c in restaurant.cuisineTypes">
+                    {{c.name}}
+                  </p>  
+        </div>
+        <div class="col">
+                  <p>
+                    <a href="#" class="subdued">Min. order:£{{restaurant.minimumDeliveryValue}}</a>
+                    <a href="#" class="subdued">Delivers in:{{restaurant.deliveryTime}} mins</a>
+                  </p>  
+        </div>
+      </div>
+  </div>
+
+</div>
+  </ion-content>
+</ion-view>

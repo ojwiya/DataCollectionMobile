@@ -8,9 +8,10 @@ dependencies:
     post:
     - npm install -g gulp
     - bower install
-    
-deployment:
-    branch: development
+
+production:
+    branch: master
+    owner: REPO_OWNER
     commands:
         - npm install -g cordova ionic
         - ionic upload --email $IONIC_EMAIL --password $IONIC_PASSWORD

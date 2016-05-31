@@ -1,7 +1,7 @@
 {
-  "name": "jeapp",
+  "name": "datacollector",
   "version": "1.1.1",
-  "description": "JeApp: An Ionic project",
+  "description": "DataCollector: An Ionic project",
   "dependencies": {
     "angular-mocks": "^1.5.5",
     "gulp": "^3.5.6",

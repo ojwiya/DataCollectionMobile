@@ -14,6 +14,7 @@ deployment:
         owner: REPO_OWNER
         commands:
             - npm install -g cordova ionic
+            - ionic build android
             - ionic upload --email $IONIC_EMAIL --password $IONIC_PASSWORD
 test:
   override:

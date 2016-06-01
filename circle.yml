@@ -4,7 +4,7 @@ machine:
   ruby:
     version: 2.3.0
 
-dependencies
+dependencies:
     post:
     - npm install -g gulp
     - bower install
